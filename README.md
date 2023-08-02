@@ -48,7 +48,7 @@ root
 
 1. **Clone the repository**
 ```
-git clone -
+git clone - https://github.com/Anooshik-Davtyan/Nueva.git
 cd Nueva
 ```
 2. **Open Cypress**
