@@ -26,10 +26,10 @@ root
 └── README.md
 ```
 - `cypress/`: This directory contains the Cypress test files
-- `e2e/`: Contains test files
+ - `e2e/`: Contains test files
     - `signIn.cy.js/`: Contains test cases on sign in functionality
     - `signUp.cy.js/`: Contains test cases on sign up functionality
-- `support/`: Contains all config files
+ - `support/`: Contains all config files
   - `Methods`/: Contains test data and validation functions
      - `constants.js`/: Contains test data
      - `validators.js`/: Contains validation functions
