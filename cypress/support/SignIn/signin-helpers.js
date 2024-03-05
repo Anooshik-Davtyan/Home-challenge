@@ -26,6 +26,41 @@ class SignInFunctionality {
         this.fillPassword(password);
         this.clickOnLoginButton();
     }
+
+    loginViaApi(email, password) {
+        return cy.request({
+            method: 'POST',
+            url: 'https://automationexercise.com/api/verifyLogin',
+            body: {
+                email: email,
+                password: password
+            }
+        });
+    }
+
+     createUserViaApi(){
+         return cy.request({
+             method: 'POST',
+             url: 'https://automationexercise.com/api/createAccount',
+             body: {
+                 name:'7237wmm16sb@gmail.com',
+                 password: 'title',
+                 birth_date:'20',
+                 birth_month: '02',
+                 birth_year: '2000',
+                 firstname: 'firstName',
+                 lastname: 'lastName',
+                 company: 'Tesvan',
+                 address1: 'Washington',
+                 country: 'test',
+                 zipcode: 'test',
+                 state: 'test',
+                 city: 'test',
+                 mobile_number: 'test'
+
+             }
+         });
+    }
 }
 
 export default SignInFunctionality;

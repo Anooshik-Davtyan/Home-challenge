@@ -46,6 +46,9 @@ describe('verify sign In functionality', () => {
     });
 
     it('verify user logout', () => {
+        //verify login via api
+        signIn.createUserViaApi();
+        signIn.loginViaApi(Constants.USER.EMAIL, Constants.USER.PASSWORD);
         signIn.login(Constants.USER.EMAIL, Constants.USER.PASSWORD);
         signIn.logout();
         validator.validateUrl('/login');
